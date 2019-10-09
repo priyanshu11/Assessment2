@@ -1,0 +1,27 @@
+  
+<div class="container">
+
+        <form class="col-md-6" (ngSubmit)="editemp()">
+            <div class="form-group">
+                <h2 >Edit </h2>
+            </div>
+            <div class="form-group">
+                    <label for="my-input">Name</label>{{name}}
+                    <input placeholder="Enter name" class="form-control" type="text" name="name" [(ngModel)]="name" >
+                </div>
+                <div class="form-group">
+                    <label for="my-input">DOB</label>{{dob}}
+                    <input placeholder="DOB" class="form-control" type="text" name="dob" [(ngModel)]="dob" >
+                </div>
+                <div class="form-group">
+                    <label for="my-input">Address</label>{{address}}
+                    <input placeholder="Enter your address" class="form-control" type="text" name="address" [(ngModel)]="address" >
+                </div>
+                <div class="form-group">
+                    <label for="my-input">Phone No.</label>{{phone}}
+                    <input placeholder="Enter your Phone number" class="form-control" type="text" name="phone" [(ngModel)]="phone">
+                </div>
+            
+            <button class="btn btn-primary" type="submit">Edit Details</button>
+        </form>
+    </div>

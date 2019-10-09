@@ -3,14 +3,32 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CreateComponent } from './create/create.component';
+
+import { EditComponent } from './edit/edit.component';
+import { ViewComponent } from './view/view.component';
+import { DeleteComponent } from './delete/delete.component';
+import { HomeComponent } from './home/home.component';
+import { ListComponent } from './list/list.component';
+import { NavComponent } from './nav/nav.component';
+import { FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CreateComponent,
+    
+    EditComponent,
+    ViewComponent,
+    DeleteComponent,
+    HomeComponent,
+    ListComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

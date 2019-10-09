@@ -1,0 +1,33 @@
+<div class="container">
+    <table class="table table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">DOB</th>
+          <th scope="col">Address</th>
+          <th scope="col">Phone</th>
+          <th scope="col">Educational details</th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr *ngFor="let em of emp">
+          <th scope="row">{{em.id}}</th>
+          <td>{{em.name}}</td>
+          <td>{{em.dob}}</td>
+          <td>{{em.address}}</td>
+          <td>{{em.phone}}</td>
+          <td><a routerLink="edit/{{em.id}}"class="btn btn-warning">Edit</a>||
+          <a routerLink="delete/{{em.id}}"class="btn btn-danger">Delete</a>||
+          <a routerLink="view/{{em.id}}"class="btn btn-info">View Educational Details</a>||
+          
+        </td>
+
+          
+        </tr>
+       
+      </tbody>
+    </table>
+  </div>
+  
+ 

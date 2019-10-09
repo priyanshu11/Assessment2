@@ -1,0 +1,38 @@
+<div class="container">
+    <form (ngSubmit)="createdata()" class="col-md-6">
+    <div class="form-group">
+        <label for="my-input"><strong>Name</strong></label>{{name}}
+        <input placeholder="Enter name" class="form-control" type="text" name="name" [(ngModel)]="name">
+    </div>
+    <div class="form-group">
+        <label for="my-input"><strong>DOB</strong></label>{{dob}}
+        <input placeholder="DOB" class="form-control" type="text" name="dob"[(ngModel)]="dob" >
+    </div>
+    <div class="form-group">
+        <label for="my-input"><strong>Address</strong></label>{{address}}
+        <input placeholder="Enter your address" class="form-control" type="text" name="address" [(ngModel)]="address">
+    </div>
+    <div class="form-group">
+        <label for="my-input"><strong>Phone No.</strong></label>{{phone}}
+        <input placeholder="Enter your Phone number" class="form-control" type="text" name="phone" [(ngModel)]="phone">
+    </div>
+    <div class="form-group">
+        <label for="my-input"><strong>Degree</strong></label>{{dergree}}
+        <input placeholder="Enter your Degree" class="form-control" type="text" name="degree" [(ngModel)]="degree">
+    </div>
+    <div class="form-group">
+        <label for="my-input"><strong>Marks</strong></label>{{marks}}
+        <input placeholder="Enter your Marks" class="form-control" type="text" name="marks"[(ngModel)]="marks" >
+    </div>
+    <div class="form-group">
+        <label for="my-input"><strong>Stream</strong></label>{{stream}}
+        <input placeholder="Enter your Stream" class="form-control" type="text" name="stream" [(ngModel)]="stream">
+    </div>
+    <div class="form-group">
+        <label for="my-input"><strong>College</strong></label>{{collegM}}
+        <input placeholder="Enter your college name" class="form-control" type="text" name="college" [(ngModel)]="college">
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+    
+</div>
